@@ -21,8 +21,10 @@
             var clicks = $(this).data('clicks');
             if (clicks) {
                 $('.background').css('display', 'none');
+                $('.menu-pop-up').css('background', 'none');
             } else {
                 $('.background').css('display', 'block');
+                $('.menu-pop-up').css('background', 'white');
             }
             $(this).data("clicks", !clicks);
         });
