@@ -8,12 +8,12 @@
         });
 ///Модальное окно
         $('.button-hire').on('click', function () {
-            $('.menu_popup, .background').css('display', 'block');
-            $('.menu-pop-up').css('display', 'none');
+            $('.menu_popup, .background').show();
+            $('.menu-pop-up').hide();
         });
         $('#close').on('click',function () {
-            $('.menu_popup, .background').css('display','none');
-            $('.menu-pop-up').css('display', 'block');
+            $('.menu_popup, .background').hide();
+            $('.menu-pop-up').show();
         });
 
 ///Гамбургер меню
