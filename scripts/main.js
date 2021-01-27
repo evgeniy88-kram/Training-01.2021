@@ -8,27 +8,29 @@
         });
 ///Модальное окно
         $('.button-hire').on('click', function () {
-            $('.menu_popup, .background').show();
-            $('.menu-pop-up').hide();
+            $('.menu_pop-up, .background').show();
         });
         $('#close').on('click',function () {
-            $('.menu_popup, .background').hide();
-            $('.menu-pop-up').show();
+            $('.menu_pop-up, .background').hide();
         });
-
 ///Гамбургер меню
-        $('.menu-pop-up label').click(function() {
+        $('.menu-hamb label').click(function() {
             var clicks = $(this).data('clicks');
             if (clicks) {
-                $('.background').css('display', 'none');
-                $('.menu-pop-up').css('background', 'none');
+                $('.menu-hamb').css('background', 'none');
             } else {
-                $('.background').css('display', 'block');
-                $('.menu-pop-up').css('background', 'white');
+                $('.menu-hamb').css('background', '#9e9e9e');
             }
             $(this).data("clicks", !clicks);
         });
-
+        //Клик вне мод окна закрывает само окно
+        $('html').mouseup(function (e) {
+            let container = $(".menu_pop-up");
+            if (container.has(e.target).length === 0){
+                container.hide();
+                $('.background').hide();
+            }
+        });
 /////////////////////////////////////////////////////
         });
 })(jQuery);
