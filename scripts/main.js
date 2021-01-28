@@ -19,7 +19,7 @@
             if (clicks) {
                 $('.menu-hamb').css('background', 'none');
             } else {
-                $('.menu-hamb').css('background', '#9e9e9e');
+                $('.menu-hamb').css('background', '#194277');
             }
             $(this).data("clicks", !clicks);
         });

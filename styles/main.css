@@ -108,7 +108,7 @@ input:checked ~ .menu-hamb {
   border-radius: 9px 9px 0 0;
   background: none;
   position: fixed;
-  top: 150px;
+  top: 72px;
   z-index: 101;
 }
 @media screen and (max-width: 500px) {
@@ -128,15 +128,15 @@ input:checked ~ .menu-hamb__main {
   flex-direction: column;
   width: 330px;
   height: 530px;
-  background: #9e9e9e;
+  background: #194277;
   overflow: hidden;
   border-radius: 0 0 9px 9px;
   position: fixed;
-  top: 230px;
+  top: 152px;
 }
 @media screen and (max-width: 500px) {
   input:checked ~ .menu-hamb__main {
-    top: 110px;
+    top: 154px;
   }
 }
 .menu-hamb__main .menu-hamb__main__list {
@@ -152,7 +152,7 @@ input:checked ~ .menu-hamb__main {
   font-family: "Lato", sans-serif;
 }
 .menu-hamb__main .menu-hamb__main__list a:hover {
-  color: #3677FD;
+  color: gold;
 }
 .menu-hamb__main .menu-hamb__main__list--item {
   margin-top: 20px;
@@ -176,7 +176,7 @@ input:checked ~ .menu-hamb__main {
   height: 51px;
 }
 .menu-hamb__main .menu-hamb__main__social--a--svg:hover {
-  fill: blue;
+  fill: gold;
 }
 .menu-hamb__main .menu-hamb__main__lang {
   display: flex;
@@ -190,7 +190,7 @@ input:checked ~ .menu-hamb__main {
   margin-bottom: 15px;
 }
 .menu-hamb__main .menu-hamb__main__lang:hover {
-  color: #3677FD;
+  color: gold;
 }
 .menu-hamb__main .menu-hamb__main__lang--svg {
   width: 67px;
