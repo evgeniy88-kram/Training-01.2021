@@ -227,7 +227,7 @@ input:checked ~ .menu-hamb__main {
 }
 @media screen and (max-width: 1000px) {
   input:checked ~ .menu-hamb__main {
-    top: 114px;
+    top: 112px;
     width: 250px;
     height: 350px;
   }
